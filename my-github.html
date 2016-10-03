@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<!--
+Linear by TEMPLATED
+templated.co @templatedco
+
+-->
+<html>
+    <head>
+        <title>我的作品集</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/skel.min.js"></script>
+        <script src="js/skel-panels.min.js"></script>
+        <script src="js/init.js"></script>
+        <noscript>
+            <link rel="stylesheet" href="css/skel-noscript.css" />
+            <link rel="stylesheet" href="css/style.css" />
+            <link rel="stylesheet" href="css/style-desktop.css" />
+        </noscript>
+        <style>
+            #header{
+                background: url(images/my-work.jpg) no-repeat center ;
+            }
+            table{
+                width: 90%;
+            }
+            td.title{
+                height: 50px;
+                vertical-align: middle;
+            }
+            table,td,th{
+                border: 2px solid black;
+                border-collapse: collapse;
+                text-align: center;
+                font-weight: bold;
+                color: black;
+                vertical-align: top;
+                height: 400px;
+                font-family: "Microsoft JhengHei";
+                font-size: 16px;
+            }
+
+        </style>
+        <script>
+            function aboutMeOver(){
+                document.getElementById("aboutMe").innerHTML="關於我";
+            }
+            function aboutMeOut(){
+                document.getElementById("aboutMe").innerHTML="About Me";
+            }
+            function myGitHubOver(){
+                document.getElementById("myGitHub").innerHTML="我的作品集";
+            }
+            function myGitHubOut(){
+                document.getElementById("myGitHub").innerHTML="My GitHub";
+            }
+            function movieOver(){
+                document.getElementById("movie").innerHTML="我喜愛的電影";
+            }
+            function movieOut(){
+                document.getElementById("movie").innerHTML="My Favorite Movie";
+            }
+            function myJobOver(){
+                document.getElementById("myJob").innerHTML="我的工作";
+            }
+            function myJobOut(){
+                document.getElementById("myJob").innerHTML="My Job";
+            }
+        </script>
+    </head>
+    <body class="homepage">
+
+        <!-- Header -->
+        <div id="header">
+            <div id="nav-wrapper"> 
+                <!-- Nav -->
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index.html" id="aboutMe" onmouseover="aboutMeOver()" onmouseout="aboutMeOut()">About Me</a></li>
+                        <li class="active"><a href="my-github.html" id="myGitHub" onmouseover="myGitHubOver()" onmouseout="myGitHubOut()">My GitHub</a></li>
+                        <li><a href="movie.html" id="movie" onmouseover="movieOver()" onmouseout="movieOut()">My Favorite Movie</a></li>
+                        <li><a href="part-time-job.html" id="myJob" onmouseover="myJobOver()" onmouseout="myJobOut()">My Job</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="container"> 
+
+                <!-- Logo -->
+                <div id="logo">
+                    <h1><a href="#">　</a></h1>
+                    <span class="tag">　</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main -->
+        <div id="main">
+            <div id="content" class="container">
+                <section>
+                    <header>
+                        <h2>我的作品集</h2>
+                        <span class="byline">持續將曾經做過的作品上傳至GitHub保存</br></br>
+                    網址 : <a href="https://github.com/KennyTzeng?tab=repositories" target="_blank" title="我的GitHub">https://github.com/KennyTzeng?tab=repositories</a>
+                    </span>
+                </header>
+            <div align="center">
+                <table>
+                    <tr><td class="title" colspan="2">Java - Aquarium 水族箱</td></tr>
+                    <tr>
+                        <td width="65%"><img src="images/Aquarium_screenshot.jpg" width="100%" height="400px"></td>
+                        <td></br><a href="https://github.com/KennyTzeng/Java_Aquarium" target="_blank" title="水族箱GitHub">GitHub網址</a></br></br>用滑鼠在水族箱中新增、移除魚或烏龜</br>魚會往各處游、烏龜沉到底後會向左右爬</br>並且會隨時改變方向與速度</br></br>每個魚或烏龜都是一執行序物件</br>有定義自己的座標、移動速度、方向、圖片</br>在畫布管理好這些物件並定時重畫就即可呈現</td>
+</tr>
+<tr><td class="title" colspan="2">Java - ChatRoom 聊天室</td></tr>
+<tr>
+    <td><img src="images/ChatRoom_screenshot.jpg" width="100%" height="400px"></td>
+    <td></br><a href="https://github.com/KennyTzeng/Java_ChatRoom" target="_blank" title="聊天室GitHub">GitHub網址</a></br></br>分為Server端與Client端，先開啟Server端後</br>Client端透過Socket連至Server端</br>Server端將每個連線建立成一個Thread</br>訊息傳遞都是透過ObjectOutput/Input Stream</br>每個訊息都是先傳至Server端</br>再由Server端廣播至每個Client端</br>因此Server端必須管理好這些連線</br>收到訊息後向每個連線發送完成即時聊天</td>
+</tr>
+<tr><td class="title" colspan="2">Java - Painter 小畫家</td></tr>
+<tr>
+    <td><img src="images/Painter_screenshot.jpg" width="100%" height="400px"></td>
+    <td></br><a href="https://github.com/KennyTzeng/Java_Painter" target="_blank" title="小畫家GitHub">GitHub網址</a></br></br>主要是利用paintComponent方法</br>與Graphics物件在Panel上畫出各種線條、形狀</br>其中還用到了偵測滑鼠事件來控制畫圖</br></br>原本是記下每個畫過的點</br>然後定時repaint這些圖形</br>這部份程式碼還可以優化再優化</td>
+</tr>
+<tr><td class="title" colspan="2">Java - RemotePlayMusic 遠端播音樂</td></tr>
+<tr>
+    <td><img src="images/RemotePlayMusic_screenshot.jpg" width="100%" height="400px"></td>
+    <td></br><a href="https://github.com/KennyTzeng/Java_RemotePlayMusic" target="_blank" title="遠端播音樂GitHub">GitHub網址</a></br></br>原理跟聊天室一樣</br>Client端將訊息傳至Server端</br>只不過這裡的訊息要輸入網址</br>Server端收到網址後便會用Chrome打開該網頁</br></br>原意為在寢室內想要用室友電腦的音響播音樂</br>但懶得實際走到電腦前打開Youtube</br>故作出了超級懶人娛樂性質的小程式</td>
+</tr>
+<tr><td class="title" colspan="2">JavaScript - Painter 網頁小畫家</td></tr>
+<tr>
+    <td><img src="images/JS_Painter_screenshot.jpg" width="100%" height="400px"></td>
+    <td></br><a href="https://github.com/KennyTzeng/JavaScript_Painter" target="_blank" title="網頁小畫家GitHub">GitHub網址</a></br>馬上試試看：<a href="https://lms.ncu.edu.tw/cruiser/ncu/102403020/Painter/Painter.html?1462367604000" target="_blank" title="網頁小畫家頁面">Try it !</a></br></br>網頁的小畫家是在Canvas上畫圖</br>要先getContext("2d")方法取得畫圖物件</br>可自行定義要畫的圖案、線條粗細、顏色甚至文字</br></br>另外我有四種大小的畫筆cursor</br>與三種大小的橡皮擦cursor</br>功能的部份還可以再擴充</br></br>! 畫筆在某些解析度的螢幕上會有偏差 !</br>! 經過測試在Safari與IE無法正常執行 !</br>! Google Chrome !</td>
+</tr>
+<tr><td class="title" colspan="2">JavaScript - MoveGame 移動遊戲</td></tr>
+<tr>
+    <td><img src="images/MoveGame_screenshot.jpg" width="100%" height="400px"></td>
+    <td></br><a href="https://github.com/KennyTzeng/JavaScript_MoveGame" target="_blank" title="移動遊戲GitHub">GitHub網址</a></br>馬上試試看：<a href="https://lms.ncu.edu.tw/cruiser/ncu/102403020/HW6/MoveGame.html?1462122616000" target="_blank" title="移動遊戲頁面">Try it !</a></br></br>要記下人物的X與Y座標位置</br>並監聽按鍵的輸入以判斷是否移動</br>移動後清空畫布並重畫人物在正確的位置上</br></br>還可以擴充成迷你RPG遊戲</br>有牆壁或NPC角色觸發事件等等</td>
+</tr>
+<tr><td class="title" colspan="2">CSS - Farm 農場</td></tr>
+<tr>
+    <td><img src="images/Farm_screenshot.jpg" width="100%" height="400px"></td>
+    <td></br><a href="https://github.com/KennyTzeng/CSS_Farm" target="_blank" title="農場GitHub">GitHub網址</a></br>馬上看看：<a href="https://lms.ncu.edu.tw/cruiser/ncu/102403020/HW7/HW7.html?1451934964000" target="_blank" title="農場頁面">Try it !</a></br></br>利用CSS position=absolute,left,top調整位置</br>風車與鳥的動畫是用JavaScript的SetInterval</br>定時改變位置或旋轉角度來達成</br>整幅風景畫都是透過CSS來控制圖片的呈現</td>
+</tr>
+<tr><td class="title" colspan="2">MIPS - PrintStar 印星星</td></tr>
+<tr>
+    <td><img src="images/PrintStar_screenshot.JPG" width="100%" height="400px"></td>
+    <td></br><a href="https://github.com/KennyTzeng/MIPS_PrintStar" target="_blank" title="印星星GitHub">GitHub網址</a></br></br>先呼叫System call印出提示訊息與等待輸入</br>可選擇印出漏斗或星星形狀以及Size</br>主要是用conditional jump/branch來實作for迴圈</br>將圖形拆成四個部份做即可</br></br>! 使用Mars4_5.jar編譯執行 !</td>
+</tr>
+<tr><td class="title" colspan="2">MIPS - Bezout's identity 貝祖定理</td></tr>
+<tr>
+    <td><img src="images/Bezout's%20identity_screenshot.JPG" width="100%" height="400px"></td>
+    <td></br><a href="https://github.com/KennyTzeng/MIPS_Bezouts-identity" target="_blank" title="貝祖定理GitHub">GitHub網址</a></br></br>根據貝祖定理表示 : </br>給定兩個不全為0的正整數A、B</br>存在整數x、y，使得：Ax+By=D</br>D為A、B的最大公因數</br></br>在看了貝祖定理的演算法之後</br>利用recursive的方式，需要將重要變數</br>與return address存入與拿出堆疊</br>即可算出x、y與D</br></br>! 使用Mars4_5.jar編譯執行 !</td>
+</tr>
+</table>
+<h1 style="font-size:40px;"></br></br></br>To be continued...</h1>
+</div>
+</section>
+</div>
+</div>
+<!-- /Main -->
+
+<!-- Tweet -->
+<div id="tweet">
+    <div class="container">
+        <section>
+            <blockquote>&ldquo; To see the world, things dangerous to come to, to see behind walls, draw closer, to find each other and to feel. That is the purpose of life. &rdquo;</blockquote>
+        </section>
+    </div>
+</div>
+
+<!-- Footer -->
+<div id="footer">
+    <div class="container">
+        <section>
+            <header>
+                <h2>聯繫我</h2>
+            </header>
+            <ul class="contact">
+                <!--						<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>-->
+                <li class="active"><a href="https://www.facebook.com/TzuHsuanTzeng" target="_blank" class="fa fa-facebook"><span>Facebook</span></a></li>
+                <!--						<li><a href="#" class="fa fa-dribbble"><span>Pinterest</span></a></li>-->
+                <!--						<li><a href="#" class="fa fa-tumblr"><span>Google+</span></a></li>-->
+            </ul>
+        </section>
+    </div>
+</div>
+
+<!-- Copyright -->
+<div id="copyright">
+    <div class="container">
+        Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
+    </div>
+</div>
+
+</body>
+</html>
