@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+<!--
+	Linear by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>我的工作</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+        <style>
+            #header{
+                background: url(images/dog.jpg) no-repeat center;
+            }
+            table,td,th{
+                border: 2px solid black;
+                border-collapse: collapse;
+                text-align: center;
+                font-weight: bold;
+                color: black;
+                width: 800px;
+                vertical-align: middle;
+            }
+        </style>
+        <script>
+            function aboutMeOver(){
+                document.getElementById("aboutMe").innerHTML="關於我";
+            }
+            function aboutMeOut(){
+                document.getElementById("aboutMe").innerHTML="About Me";
+            }
+            function myGitHubOver(){
+                document.getElementById("myGitHub").innerHTML="我的作品集";
+            }
+            function myGitHubOut(){
+                document.getElementById("myGitHub").innerHTML="My GitHub";
+            }
+            function movieOver(){
+                document.getElementById("movie").innerHTML="我喜愛的電影";
+            }
+            function movieOut(){
+                document.getElementById("movie").innerHTML="My Favorite Movie";
+            }
+            function myJobOver(){
+                document.getElementById("myJob").innerHTML="我的工作";
+            }
+            function myJobOut(){
+                document.getElementById("myJob").innerHTML="My Job";
+            }
+        </script>
+	</head>
+	<body class="homepage">
+
+	<!-- Header -->
+		<div id="header">
+			<div id="nav-wrapper"> 
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html" id="aboutMe" onmouseover="aboutMeOver()" onmouseout="aboutMeOut()">About Me</a></li>
+                        <li><a href="my-github.html" id="myGitHub" onmouseover="myGitHubOver()" onmouseout="myGitHubOut()">My GitHub</a></li>
+						<li><a href="movie.html" id="movie" onmouseover="movieOver()" onmouseout="movieOut()">My Favorite Movie</a></li>
+                        <li class="active"><a href="part-time-job.html" id="myJob" onmouseover="myJobOver()" onmouseout="myJobOut()">My Job</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="container"> 
+				
+				<!-- Logo -->
+				<div id="logo">
+					<h1><a href="#">　</a></h1>
+					<span class="tag">　</span>
+				</div>
+			</div>
+		</div>
+
+	<!-- Main -->
+		<div id="main">
+			<div id="content" class="container">
+				<section>
+					<header>
+						<h2>一億園蔥油餅</h2>
+						<span class="byline">位在中大宵夜街霸王香雞排斜對面、立橙飲料店隔壁</span>
+					</header>
+                    <img src="images/1E.jpg" alt="一億蔥油餅店鋪照" height="700px">
+                    <p></p>
+					<p>我在這家店打工已經邁入第三個學期了，每周二跟四晚上五點至九點半上班，負責在櫃台銷售與滿足客人需求，老闆人很好、東西很好吃，店裡還有兩隻可愛狗狗：順順與豪野。</p>
+                    <p></p>
+                    <p>以下是我們的價目表：</p>
+                    <div align="center">
+                        <table>
+                            <tr>
+                                <th colspan="2">項目</th>
+                                <th>價格</th>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">蔥油餅</td>
+                                <td>加蛋</td>
+                                <td>28元</td>
+                            </tr>
+                            <tr>
+                                <td>原味</td>
+                                <td>22元</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">生煎包</td>
+                                <td>豬肉</td>
+                                <td>12元</td>
+                            </tr>
+                            <tr>
+                                <td>韭菜</td>
+                                <td>12元</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">老麵大餅</td>
+                                <td>辣肉醬</td>
+                                <td>30元</td>
+                            </tr>
+                            <tr>
+                                <td>蔥</td>
+                                <td>25元</td>
+                            </tr>
+                            <tr>
+                                <td>葡萄乾</td>
+                                <td>25元</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">芝麻球</td>
+                                <td>紅豆</td>
+                                <td>15元</td>
+                            </tr>
+                            <tr>
+                                <td>芋頭</td>
+                                <td>15元</td>
+                            </tr>
+                            <tr>
+                                <td>花生</td>
+                                <td>15元</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">甜甜圈</td>
+                                <td>原味</td>
+                                <td>12元</td>
+                            </tr>
+                            <tr>
+                                <td>巧克力</td>
+                                <td>15元</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">雙胞胎</td>
+                                <td>15元</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">咖哩麵包</td>
+                                <td>30元</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">牛肉捲餅</td>
+                                <td>65元</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">豆漿</td>
+                                <td>大杯</td>
+                                <td>20元</td>
+                            </tr>
+                            <tr>
+                                <td>小杯</td>
+                                <td>15元</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">米漿</td>
+                                <td>大杯</td>
+                                <td>20元</td>
+                            </tr>
+                            <tr>
+                                <td>小杯</td>
+                                <td>15元</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <br>
+                    <p>地圖：（圖正中間一位客人前的攤子即為本店）</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1szh-TW!2stw!4v1445682458962!6m8!1m7!1sjO3WPJDnJmP-sAblgDq-Xw!2m2!1d24.9648609!2d121.1935535!3f352.3920162304484!4f-6.272739699348364!5f1.0818527210298616" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d537.6756865542087!2d121.1935609390731!3d24.964874157233837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1szh-TW!2stw!4v1445682559155" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</section>
+			</div>
+		</div>
+	<!-- /Main -->
+        
+	<!-- Tweet -->
+		<div id="tweet">
+			<div class="container">
+				<section>
+					<blockquote>&ldquo; To see the world, things dangerous to come to, to see behind walls, draw closer, to find each other and to feel. That is the purpose of life. &rdquo;</blockquote>
+				</section>
+			</div>
+		</div>
+
+	<!-- Footer -->
+		<div id="footer">
+			<div class="container">
+				<section>
+					<header>
+						<h2>聯繫我</h2>
+					</header>
+					<ul class="contact">
+<!--						<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>-->
+						<li class="active"><a href="https://www.facebook.com/TzuHsuanTzeng" target="_blank" class="fa fa-facebook"><span>Facebook</span></a></li>
+<!--						<li><a href="#" class="fa fa-dribbble"><span>Pinterest</span></a></li>-->
+<!--						<li><a href="#" class="fa fa-tumblr"><span>Google+</span></a></li>-->
+					</ul>
+				</section>
+			</div>
+		</div>
+
+	<!-- Copyright -->
+		<div id="copyright">
+			<div class="container">
+				Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
+			</div>
+		</div>
+
+	</body>
+</html>
